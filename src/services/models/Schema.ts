@@ -106,13 +106,13 @@ export class SchemaModel {
     if (!propName) {
       return this.title
     }
-    let properties = this.schema.properties
+    const properties = this.schema.properties
 
     if (!properties) {
       return this.title
     }
 
-    let prop = (properties[propName] || null)
+    const prop = (properties[propName] || null)
 
     return prop && prop.enum && prop.enum.length && prop.enum[0] || this.title
   }
