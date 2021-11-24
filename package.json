@@ -8,7 +8,7 @@
   },
   "browserslist": [
     "defaults",
-    "chrome"
+    "not IE 11"
   ],
   "engines": {
     "node": ">=6.9",
