@@ -1,10 +1,10 @@
 {
-  "name": "redoc",
+  "name": "@rmela/redoc",
   "version": "2.0.0-rc.57",
-  "description": "ReDoc",
+  "description": "Hack of Roman Hotskiy's ReDoc to avoid overriding user-provided discriminator values in Request samples",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Redocly/redoc"
+    "url": "git://github.com/rmela/redoc"
   },
   "browserslist": [
     "defaults",
@@ -14,7 +14,10 @@
     "node": ">=6.9",
     "npm": ">=3.0.0"
   },
-  "author": "Roman Hotsiy <gotsijroman@gmail.com>",
+  "author": "Robert Mela <robert.steven.mela@gmail.com>",
+  "contributors": [
+    "Roman Hotsiy <gotsijroman@gmail.com>"
+  ],
   "license": "MIT",
   "keywords": [
     "OpenAPI",
@@ -79,9 +82,9 @@
     "@types/json-pointer": "^1.0.30",
     "@types/lodash": "^4.14.170",
     "@types/lunr": "^2.3.3",
-    "@types/node": "^15.6.1",
     "@types/mark.js": "^8.11.5",
     "@types/marked": "^1.1.0",
+    "@types/node": "^15.6.1",
     "@types/prismjs": "^1.16.5",
     "@types/prop-types": "^15.7.3",
     "@types/react": "^17.0.8",
@@ -166,6 +169,7 @@
     "prismjs": "^1.24.1",
     "prop-types": "^15.7.2",
     "react-tabs": "^3.2.2",
+    "redoc-cli": "^0.13.0",
     "slugify": "~1.4.7",
     "stickyfill": "^1.1.1",
     "swagger2openapi": "^7.0.6",
