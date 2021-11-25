@@ -65,7 +65,7 @@ export class MediaTypeModel {
         if (this.schema.discriminatorProp && typeof sample === 'object' && sample) {
           sample[this.schema.discriminatorProp] = subSchema.discriminant(this.schema.discriminatorProp)
         }
-        this.examples[subSchema.title] = new ExampleModel(
+        this.examples[subSchema.discriminant()] = new ExampleModel(
           parser,
           {
             value: sample,

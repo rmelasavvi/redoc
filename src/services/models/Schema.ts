@@ -102,7 +102,12 @@ export class SchemaModel {
     this.activeOneOf = idx;
   }
 
-  discriminant(propName): string {
+  discriminant(propName?): string {
+
+    if (!propName) {
+      propName = this.schema.discriminator?.propertyName
+
+    }
     if (!propName) {
       return this.title
     }
